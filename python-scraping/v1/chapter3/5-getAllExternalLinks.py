@@ -8,7 +8,7 @@ import random
 pages = set()
 random.seed(datetime.datetime.now())
 
-#Retrieves a list of all Internal links found on a page
+#Retrieves a list of all Internal links found on a page   整个代码运行失败了
 def getInternalLinks(bsObj, includeUrl):
     includeUrl = urlparse(includeUrl).scheme+"://"+urlparse(includeUrl).netloc
     internalLinks = []
